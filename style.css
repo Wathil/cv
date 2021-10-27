@@ -2,11 +2,17 @@
     box-sizing: border-box;
   }
 
-ul {
+ul.nav-header {
+    width: 500px;
     list-style: none;
     margin: 0 auto;
 }
 
-li {
+ul.nav-header li {
     float:left;
+    margin-left: 1em;
+}
+
+h1 {
+    clear:both;
 }

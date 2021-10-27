@@ -1,77 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structure page HTML</title>
-  <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure page HTML</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <figure>
-      <!-- Commentaire HTML -->
-      <img src="https://picsum.photos/1600/300" alt="Photo déco">
-      <figcaption style="text-align: center;">Jolie photo</figcaption>
-    </figure>
+    <header>
+        <figure>
+            <!-- Commentaire HTML -->
+            <img src="https://picsum.photos/1600/300" alt="Photo déco">
+            <figcaption style="text-align: center;">Jolie photo</figcaption>
+        </figure>
 
-    <nav>
-      
-     <ul>
-         <li><a href="#" title="A propos">A propos</a></li>
-         <li><a href="#" title="Mes compétences">Compétences</a></li>
-         <li><a href="#" title="Mon expérience">Expérience</a></li>
-         <li><a href="#" title="Mes formations">Formation</a></li>
-         <li><a href="#" title="Mon contact">Contact</a></li>
-     </ul>
-    </nav>
+        <nav>
+            <ul class="nav-header">
+                <li><a href="#apropos" title="A propos">A propos</a></li>
+                <li><a href="#competence" title="Mes compétences">Compétences</a></li>
+                <li><a href="#experience" title="Mon expérience">Expérience</a></li>
+                <li><a href="#formation" title="Mes formations">Formation</a></li>
+                <li><a href="contact.html" title="Mon contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div>
-        <h1>Développeur front end</h1>
-    </div>
-    
-  </header>
+        <div>
+            <h1>Développeur front end</h1>
+        </div>
 
-  <main>
-    <section>
-      <h2>Section 1</h2>
-      <p>Du contenu sur un thème pour sectino 1</p>
+    </header>
 
-        <article>
+    <aside>
+        <ul>
+            <li>Nom</li>
+            <li>Prénom</li>
+            <li>
+                <address>
+                    <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                    <a href="tel:+13115552368">(311) 555-2368</a>
+                </address>
+            </li>
+            <li>Téléphone <a href="tel:+33651399865">06 51 39 98 65</a></li>
+            <li>Email <a href="mailto:john.doe@truc.fr">Contactez moi par email</a></li>
+        </ul>
+    </aside>
 
+    <main>
+        <section id="apropos">
             <h2>A propos</h2>
-            <figure>
-                <img src="https://picsum.photos/300/400" alt="Photo de profil">
-                <ul>
-                    <li>Nom</li>
-                    <li>Prénom</li>
-                    <li>Adresse</li>
-                    <li>Téléphone</li>
-                    <li>Email <a href="mailto:john.doe@truc.fr"></a></li>
-                </ul>
-            </figure>
-        
-        </article>
+            <article>
+                <h3>Titre</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/150?text=PhotoProfil" alt="Photo de profil">
 
-    </section>
+                </figure>
 
-    <section>
-      <h2>Section 2</h2>
-      <p>Du contenu sur un thème pour sectino 2</p>
-    </section>
+            </article>
 
-    <section>
-      <h2>Section 3</h2>
-      <p>Du contenu sur un thème pour sectino 3</p>
-    </section>
-  </main>
+        </section>
+        <!-- Expérience professionnel -->
+        <section id="experience">
+            <h2>Expérience professionnel</h2>
+            <article>
+                <h3>Nom de l'entreprise</h3>
+                <h3>Poste occupé</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos amet cumque sint id ratione facilis
+                    nemo dolorum consequatur porro voluptas, adipisci repellat voluptatem sit magnam dolor est rerum
+                    fuga! Dolore?<br>
+                    Consectetur inventore modi aperiam odit corporis illum itaque commodi sit cupiditate. Similique
+                    illum ut doloremque blanditiis aut, officia animi, tenetur molestiae aspernatur sit sunt vel dolorem
+                    accusamus, quas sed saepe?<br>
+                    Dolores itaque iure in doloribus eum! Odio dicta, reprehenderit iusto enim ab, consequuntur
+                    repudiandae quae dignissimos doloremque laboriosam temporibus vitae perferendis reiciendis neque
+                    quidem unde laudantium consequatur. Laborum, laudantium molestias.</p>
+                <pre>
+                        ul.nav-header li {
+                            float:left;
+                            margin-left: 1em;
+                        }
+                    </pre>
+            </article>
+            <hr>
+            <article>
+                <h3>Nom de l'entreprise</h3>
+                <h3>Poste occupé</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos amet cumque sint id ratione facilis
+                    nemo dolorum consequatur porro voluptas, adipisci repellat voluptatem sit magnam dolor est rerum
+                    fuga! Dolore?<br>
+                    Consectetur inventore modi aperiam odit corporis illum itaque commodi sit cupiditate. Similique
+                    illum ut doloremque blanditiis aut, officia animi, tenetur molestiae aspernatur sit sunt vel dolorem
+                    accusamus, quas sed saepe?<br>
+                    Dolores itaque iure in doloribus eum! Odio dicta, reprehenderit iusto enim ab, consequuntur
+                    repudiandae quae dignissimos doloremque laboriosam temporibus vitae perferendis reiciendis neque
+                    quidem unde laudantium consequatur. Laborum, laudantium molestias.</p>
+            </article>
+            <hr>
+            <article>
+                <h3>Nom de l'entreprise</h3>
+                <h3>Poste occupé</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos amet cumque sint id ratione facilis
+                    nemo dolorum consequatur porro voluptas, adipisci repellat voluptatem sit magnam dolor est rerum
+                    fuga! Dolore?<br>
+                    Consectetur inventore modi aperiam odit corporis illum itaque commodi sit cupiditate. Similique
+                    illum ut doloremque blanditiis aut, officia animi, tenetur molestiae aspernatur sit sunt vel dolorem
+                    accusamus, quas sed saepe?<br>
+                    Dolores itaque iure in doloribus eum! Odio dicta, reprehenderit iusto enim ab, consequuntur
+                    repudiandae quae dignissimos doloremque laboriosam temporibus vitae perferendis reiciendis neque
+                    quidem unde laudantium consequatur. Laborum, laudantium molestias.</p>
+            </article>
 
-  <footer>
+        </section>
 
-  </footer>
+        <!-- Compétences -->
+        <section id="competence">
+            <h2>Compétences</h2>
+            <article>
+                <h3>Mes compétences front-end</h3>
+                <table>
+                    <caption>tableau</caption>
+                    <thead>
+                        <tr>
+                            <th>Langage 1</th>
+                            <th>Progression 1</th>
+                        </tr>
+                        <tr>
+                            <th>Langage 2</th>
+                            <th>Progression 2</th>
+                        </tr>
+                        <tr>
+                            <th>Langage 3</th>
+                            <th>Progression 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td><progress id="f1" max="100" value="70">70%</progress></td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td><progress id="f2" max="100" value="30">30%</progress></td>
+                        </tr>
+                        <tr>
+                            <td>GIT</td>
+                            <td><progress id="f3" max="100" value="40">40%</progress></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td><progress id="f4" max="100" value="10">10%</progress></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>f 1</th>
+                            <th>f 2</th>
+                        </tr>
+                        <tr>
+                            <th>f a</th>
+                            <th>f b</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </article>
+        </section>
+
+        <!-- Formation Date Duréee Lieu -->
+        <section id="formation">
+            <h2>Mes Formations</h2>
+            <article>
+                <h3>Première formation</h3>
+                <h4>Master 2 AGE</h4>
+                <h5><span><time datetime="2021-07"></time>Juillet 2021</span>&emsp;<span>6 mois</span></h5>
+                <h5>Bordeaux</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam iure, magnam suscipit eligendi
+                    fugiat nihil maiores voluptatibus facilis sed.</p>
+            </article>
+            <article>
+                <h3>Deuxième formation</h3>
+                <h4>Master 2 AGE</h4>
+                <h5><span><time datetime="2021-07"></time>Juillet 2021</span>&emsp;<span>6 mois</span></h5>
+                <h5>Bordeaux</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam iure, magnam suscipit eligendi
+                    fugiat nihil maiores voluptatibus facilis sed.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div><span><i class="fa-brands fa-facebook"></i></span><span></span><i
+                class="fa-brands fa-linkedin"></i><span><i class="fa-brands fa-instagram-square"></i></span>
+        </div>
+    </footer>
 
 </body>
 
