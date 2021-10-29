@@ -17,18 +17,26 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Structure page HTML</title>
-    <link href="style.css" rel="stylesheet">
+    
 </head>
 
 <body>
 
     <header>
-        <figure>
-            <!-- Commentaire HTML -->
-            <img src="https://picsum.photos/1600/300" alt="Photo déco">
+        <!--         <figure>
+            <img src="assets/img/dev-worker_x2100.jpg" alt="Photo déco" srcset="assets/img/dev-worker_x2100.jpg 2100w, assets/img/dev-worker_x1550.jpg 1550w, assets/img/dev-worker_x775.jpg 775w, assets/img/dev-worker_x390.jpg 390w" sizes="(min-width: 400) 755px, (min-width: 960) 1550px, (min-width: 1300) 2100px, 100vw">
             <figcaption style="text-align: center;">Jolie photo</figcaption>
-        </figure>
+        </figure> -->
+
+        <picture>
+            <source media="(min-width: 1300px)" srcset="assets/img/dev-worker_x2100.jpg">
+            <source media="(min-width: 960px)" srcset="assets/img/dev-worker_x1550.jpg">
+            <source media="(min-width: 400px)" srcset="assets/img/dev-worker_x775.jpg">
+            <img src="assets/img/dev-worker_x390.jpg">
+        </picture>
 
         <nav>
             <ul class="nav-header">
@@ -61,7 +69,7 @@
         </ul>
     </aside>
 
-    <main>
+    <main id="main">
         <section id="apropos">
             <h2>A propos</h2>
             <article>
@@ -205,7 +213,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div><span><i class="fa-brands fa-facebook"></i></span><span></span><i
                 class="fa-brands fa-linkedin"></i><span><i class="fa-brands fa-instagram-square"></i></span>
         </div>
